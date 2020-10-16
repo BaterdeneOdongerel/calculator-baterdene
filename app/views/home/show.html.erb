@@ -1,0 +1,23 @@
+<%= javascript_pack_tag 'show' %>
+
+
+
+
+<div class="grid-container">
+  <div class="grid-item">
+     
+<p id="user_name"><%= @user_name%></p>
+     <%= render "calculator" %>
+  </div>
+
+  <div class="grid-item" id="chat_grid">
+   <% @msg.each do |msg|%>
+            <div class="message message">
+               <div> <%= msg.user %>: </div>
+               <%= msg.content %>
+            </div>
+   <% end %>
+  </div>
+</div>
+
+
