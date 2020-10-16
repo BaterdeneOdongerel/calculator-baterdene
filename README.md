@@ -10,7 +10,7 @@
   2. install the same ruby version (can be seen in Gemlock)
   3. type "bundle install" to install dependencies 
   4. Configure the database.yml according to your local database connection.
-  5. type "rails s -p 8000" to run the app. (you can see the app at "localhost")
+  5. type "rails s -p [port]" to run the app. (you can see the app at "localhost:[port]")
   
   
   
@@ -21,20 +21,12 @@ Things you may want to cover:
 
 * Ruby version
     2.6.6
-* System dependencies
     bundle version 1.17.3
     Posgresql
 * Configuration
-    Need to configure database connection in database.yml file
+    1. Need to configure database connection in database.yml file
 * Database creation
       1. rake db:create
       2. rake db:migrate
-* Database initialization
-       
-* How to run the test suite
-     
-* Services (job queues, cache servers, search engines, etc.)
-    Redis gem should be commented out when tying to run it in development environment
-* Deployment instructions
-
-* ...
+ 
+* Redis gem should be commented out when tying to run it in development environment
